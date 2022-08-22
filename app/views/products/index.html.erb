@@ -1,5 +1,9 @@
 <h1>Products#index</h1>
 
-<% @list.each do |product| %>
-  <%= link_to product.title, product_path(product) %>
-<% end %>
+<ul>
+  <% @products.each do |product| %>
+  <li>
+    <%= link_to product.title, product_path(product) %>
+  </li>
+  <% end %>
+</ul>
