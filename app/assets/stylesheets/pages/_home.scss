@@ -1,41 +1,36 @@
 // Specific CSS for your home-page
-.home-container {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.home-description {
+.split {
+  top: 0;
+  z-index: 1;
   width: 50%;
-  height: 100vw;
-  padding: 20px;
-  border: 4px $black solid;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  border: 1px solid $black;
 }
 
 .home-description {
-  background-color: $green;
-  flex: 0 1 50%;
+  left: 0;
+  background-color: $blue;
 }
 
 .home-image {
-  background-color: $purple;
-  flex: 0 1 -50%;
+  background-color: $orange;
+  right: 0;
 }
 
-.banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
 }
 
-.banner h1 {
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+.btn {
+  box-shadow: 5px 5px $black;
 }
 
-.banner p {
-  font-size: 20px;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+.btn:hover {
+  box-shadow: 10px 10px $black;
 }
