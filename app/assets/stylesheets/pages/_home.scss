@@ -1,1 +1,39 @@
 // Specific CSS for your home-page
+.split {
+  bottom: 0;
+  width: 50%;
+  height: 89%;
+  position: fixed;
+  overflow-x: hidden;
+  border: 1px solid $black;
+}
+
+.home-description {
+  left: 0;
+  background-color: $blue;
+}
+
+.home-image {
+  background-color: $orange;
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.btn {
+  box-shadow: 5px 5px $black;
+}
+
+.btn:hover {
+  box-shadow: 10px 10px $black;
+}
+
+.landing-image {
+  width: 35rem;
+}

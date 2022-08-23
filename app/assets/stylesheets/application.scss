@@ -14,7 +14,7 @@
 @import "components/text";
 @import "components/split";
 @import "navbar";
-
+@import "footer";
 
 .margin-top {
   margin-top: 40px;
@@ -22,4 +22,8 @@
 
 .margin-bottom {
   margin-bottom: 40px;
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
 }
