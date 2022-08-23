@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: :show
 
   def index
+    # @products = Product.all.includes(:purchase).where('purchases.product_id': nil)
     @products = Product.all
   end
 
