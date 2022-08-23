@@ -1,11 +1,7 @@
 class PurchasesController < ApplicationController
   def new
     @product = Product.find(params[:product_id])
-    if current_user
-      @purchase = Purchase.new
-    else
-      redirect_to new_user_session_path, notice: 'You are not logged in.'
-    end
+    redirect_to new_user_session_path, notice: 'You are not logged in.' unless current_user
   end
 
   def create
