@@ -1,8 +1,8 @@
 // Specific CSS for your home-page
-.split {
+.splithome {
   bottom: 0;
   width: 50%;
-  height: 89%;
+  height: 100%;
   position: fixed;
   overflow-x: hidden;
   border: 1px solid $black;
@@ -18,7 +18,7 @@
   right: 0;
 }
 
-.centered {
+.centered-home {
   position: absolute;
   top: 50%;
   left: 50%;

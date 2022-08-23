@@ -4,12 +4,20 @@
   <% @products.each do |product| %>
     <%= link_to product_path(product) do %>
       <li class="card">
-          <div class="card-image card-jake"></div>
+          <% if product.cloudinary_id.present? %>
+            <div class="card-image card-jake" style="background-image: url('<%= cl_image_path product.cloudinary_id.key, crop: :scale %>')"></div>
+          <% else %>
+            <div class="card-image card-jake" style="background-image: url('https://vignette.wikia.nocookie.net/brooklynnine-nine/images/7/7f/JakeS5.jpg/revision/latest?cb=20171103222710')"></div>
+          <% end %>
           <div class="card-text">
             <h3 class="title"><%= product.title %></h3>
             <p class="card-content">
               <span class="description"><%= product.description %><br>
-              Price : <%= product.price %>
+               <% if product.purchase %>
+                  <img src="https://cdn-icons-png.flaticon.com/128/7511/7511680.png" width="80" height="80" alt="sold">
+                <% else %>
+                  Price : <%= product.price %>
+                <% end %>
               </span>
             </p>
           </div>
