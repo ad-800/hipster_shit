@@ -9,6 +9,7 @@
         </div>
       </div>
     </div>
+
     <div class="show-r col-12 col-lg-6">
       <div class="half">
         <h3><% @product.title %></h3>
@@ -18,9 +19,14 @@
         <button class="button-52" role="button">
           <%= link_to "back to the list", products_path, class: 'link' %>
         </button>
+        <% if @product.purchase %>
+        <br>
+        <img src="https://i.ibb.co/QjjPvJJ/shitsold.png" alt="sold">
+        <% else %>
         <button class="button-52" role="button">
           <%= link_to "buy shit", new_product_purchase_path(@product), class: 'link' %>
         </button>
+        <% end %>
       </div>
     </div>
   </div>
