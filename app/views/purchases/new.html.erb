@@ -1,0 +1,6 @@
+<h1>New Purchase</h1>
+<p><%= @product.title %></p>
+<p><%= @product.description %></p>
+<p><%= @product.price %></p>
+
+<%= link_to 'Purchase', product_purchases_path(@product), method: :post %>
