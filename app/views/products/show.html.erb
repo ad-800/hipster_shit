@@ -14,9 +14,13 @@
       <button class="button-52" role="button">
         <%= link_to 'Back to All products', products_path, class: 'link' %>
       </button>
-      <button class="button-52" role="button">
-        <%= link_to 'Buy this shit', new_product_purchase_path(@product) %>
-      </button>
+      <% if @product.purchase %>
+        <img src="https://cdn-icons-png.flaticon.com/128/7511/7511680.png" width="80" height="80" alt="sold">
+      <% else %>
+        <button class="button-52" role="button">
+          <%= link_to 'Buy this shit', new_product_purchase_path(@product) %>
+        </button>
+      <% end %>
     </div>
   </div>
 </div>
