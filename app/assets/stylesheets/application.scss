@@ -10,4 +10,16 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/button";
+@import "components/text";
+@import "components/split";
 @import "navbar";
+
+
+.margin-top {
+  margin-top: 40px;
+}
+
+.margin-bottom {
+  margin-bottom: 40px;
+}

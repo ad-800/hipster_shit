@@ -6,7 +6,6 @@ ruby "3.1.2"
 gem 'faker'
 # Gems we install
 gem "devise"
-gem "dotenv-rails", groups: [:development, :test]
 gem "cloudinary"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

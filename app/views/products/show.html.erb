@@ -1,5 +1,19 @@
-<h1>Products#show</h1>
-<h2> <%= @product.title %> </h2><br>
-<p>Description: <%= @product.description %></p>
-<p>Price: <%= @product.price %></p>
-<%= link_to 'Back to All products', products_path %>
+<div class="container">
+  <div class="split left">
+    <div class="centered">
+      <% if @product.cloudinary_id.attached? %>
+        <%= cl_image_tag @product.cloudinary_id.key, height: 500, width: 500, crop: :fill %>
+      <% end %>
+    </div>
+  </div>
+  <div class="split right">
+    <div class="centered">
+      <h3 class="margin-bottom"><%= @product.title %></h3>
+      <p><i class="fa-solid fa-tags"></i><%= @product.description %></p>
+      <p><i class="fa-solid fa-euro-sign"></i><%= @product.price %></p>
+      <button class="button-52" role="button">
+        <%= link_to 'Back to All products', products_path, class: 'link' %>
+      </button>
+    </div>
+  </div>
+</div>
