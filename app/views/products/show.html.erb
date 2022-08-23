@@ -13,6 +13,7 @@
       <p><i class="fa-solid fa-euro-sign"></i><%= @product.price %></p>
       <button class="button-52" role="button">
         <%= link_to 'Back to All products', products_path, class: 'link' %>
+        <%= link_to 'Buy this shit', new_product_purchase_path(@product) %>
       </button>
     </div>
   </div>
