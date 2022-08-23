@@ -1,0 +1,75 @@
+:root {
+  --card-proportions: 90;
+  --card-height: calc(3.5px * var(--card-proportions));
+  --card-width: calc(2.5px * var(--card-proportions));
+}
+
+.card {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1.5%;
+  height: var(--card-height);
+  width: var(--card-width);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 5px rgba(0, 0, 0, 0.4);
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 1s ease-in-out;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+/* all the content of the front of the cards */
+
+.card-text {
+  background: linear-gradient(176deg, #000d33, 17%, #0153cd, 17%, #0153cd, 19%, antiquewhite, 19%, antiquewhite);
+  display: inline-block;
+  height: var(--card-height);
+  width: var(--card-width);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3) inset;
+  transform: translateZ(-1px) translateY(-315px) rotateY(180deg);
+}
+
+/* the title of the card  */
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: block;
+}
+
+/* the .description of the card */
+
+.card-content {
+  text-align: justify;
+  color: #222;
+  font-size: 18px;
+  display: block;
+  height: var(--card-height);
+  width: var(--card-width);
+  box-sizing: border-box;
+  padding: 13% 5% 5% 5%;
+}
+
+.description {
+  color: #444;
+}
+
+/* all the images of each card */
+
+.card-image {
+  height: var(--card-height);
+  width: var(--card-width);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3) inset;
+}
+
+.card-jake {
+  background-image: url("https://vignette.wikia.nocookie.net/brooklynnine-nine/images/7/7f/JakeS5.jpg/revision/latest?cb=20171103222710");
+  background-size: cover;
+}
