@@ -16,7 +16,10 @@
         <p><i class="fa-solid fa-tags"></i> <%= @product.description %></p>
         <p><i class="fa-solid fa-cart-shopping"></i> <%= @product.price %> <i class="fa-solid fa-euro-sign"></i></p>
         <button class="button-52" role="button">
-          <%= link_to "Back to the cards <", products_path, class: 'link' %>
+          <%= link_to "back to the list", products_path, class: 'link' %>
+        </button>
+        <button class="button-52" role="button">
+          <%= link_to "buy shit", new_product_purchase_path(@product) %>
         </button>
       </div>
     </div>
