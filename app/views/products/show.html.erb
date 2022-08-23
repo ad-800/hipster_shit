@@ -1,26 +1,24 @@
-<div class="container">
-  <div class="split left">
-    <div class="centered">
-      <% if @product.cloudinary_id.attached? %>
-        <%= cl_image_tag @product.cloudinary_id.key, height: 500, width: 500, crop: :fill %>
-      <% end %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="show-l col-12 col-lg-6">
+      <div class="d-flex justify-content-center half">
+        <div class="show-image">
+          <% if @product.cloudinary_id.attached? %>
+            <%= cl_image_tag @product.cloudinary_id.key, height: 500, width: 500, crop: :fill %>
+          <% end %>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="split right">
-    <div class="centered">
-      <h3 class="margin-bottom"><%= @product.title %></h3>
-      <p><i class="fa-solid fa-tags"></i><%= @product.description %></p>
-      <p><i class="fa-solid fa-euro-sign"></i><%= @product.price %></p>
-      <button class="button-52" role="button">
-        <%= link_to 'Back to All products', products_path, class: 'link' %>
-      </button>
-      <% if @product.purchase %>
-        <img src="https://cdn-icons-png.flaticon.com/128/7511/7511680.png" width="80" height="80" alt="sold">
-      <% else %>
+    <div class="show-r col-12 col-lg-6">
+      <div class="half">
+        <h3><% @product.title %></h3>
+        <h3 class="margin-bottom margin-top"><%= @product.title %></h3>
+        <p><i class="fa-solid fa-tags"></i> <%= @product.description %></p>
+        <p><i class="fa-solid fa-cart-shopping"></i> <%= @product.price %> <i class="fa-solid fa-euro-sign"></i></p>
         <button class="button-52" role="button">
-          <%= link_to 'Buy this shit', new_product_purchase_path(@product) %>
+          <%= link_to "Back to the cards <", products_path, class: 'link' %>
         </button>
-      <% end %>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,25 @@
+/* Control the left side */
+.show-l {
+  // left: 0;
+  border-top: 2px solid black;
+  background-color: #FEE432;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+/* Control the right side */
+.show-r {
+  // right: 0;
+  border-top: 2px solid black;
+  background-color: #D182F8;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.half {
+  padding: 80px;
+}
+
+.image-show {
+  border: 2px solid black;
+}
