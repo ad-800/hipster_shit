@@ -1,10 +1,20 @@
-<h1>Products#index</h1>
+<h1 class="page-title pt-text"> Products</h1>
 
-<ul>
+<ul class="cards">
   <% @products.each do |product| %>
-  <li>
-    <%= link_to product.title, product_path(product) %>
-  </li>
+    <%= link_to product_path(product) do %>
+      <li class="card">
+          <div class="card-image card-jake"></div>
+          <div class="card-text">
+            <h3 class="title"><%= product.title %></h3>
+            <p class="card-content">
+              <span class="description"><%= product.description %><br>
+              Price : <%= product.price %>
+              </span>
+            </p>
+          </div>
+      </li>
+    <% end %>
   <% end %>
 </ul>
 
