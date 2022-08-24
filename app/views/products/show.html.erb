@@ -20,8 +20,8 @@
           <%= link_to "back to the list", products_path, class: 'link' %>
         </button>
         <% if @product.purchase %>
-        <br>
-        <img src="https://i.ibb.co/QjjPvJJ/shitsold.png" alt="sold">
+        <br><br>
+        <img src="https://i.ibb.co/QjjPvJJ/shitsold.png" height="50" alt="sold">
         <% else %>
         <button class="button-52" role="button">
           <%= link_to "buy shit", new_product_purchase_path(@product), class: 'link' %>
