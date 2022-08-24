@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:title, :description, :price, :cloudinary_id)
+    params.require(:product).permit(:title, :description, :price, :photo)
   end
 
   def set_product
