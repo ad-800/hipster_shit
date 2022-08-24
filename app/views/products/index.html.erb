@@ -1,9 +1,9 @@
 <h1 class="page-title pt-text">hip shit</h1>
 
-<ul class="cards">
+<div class="cards">
   <% @products.each do |product| %>
     <%= link_to product_path(product) do %>
-      <li class="card">
+      <div class="card">
           <% if product.cloudinary_id.present? %>
             <div class="card-image card-jake" style="background-image: url('<%= cl_image_path product.cloudinary_id.key, crop: :scale %>')"></div>
           <% else %>
@@ -21,7 +21,7 @@
               </span>
             </p>
           </div>
-      </li>
+      </div>
     <% end %>
   <% end %>
-</ul>
+</div>
