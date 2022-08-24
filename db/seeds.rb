@@ -1,8 +1,8 @@
 require "open-uri"
 
 puts "Cleaning database..."
-Product.destroy_all
 Purchase.destroy_all
+Product.destroy_all
 
 puts "Creating 10 seeds"
 
