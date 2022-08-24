@@ -1,0 +1,23 @@
+.checkout-box {
+  border: 2px solid black;
+  padding: 30px;
+  background-color: #75FB85;
+  border-radius: 4px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.credit {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 20px;
+}
+
+.checkout-border {
+  border-top: 2px solid black;
+}
+
+.card-font {
+  font-family: 'Open Sans', sans-serif;
+}
