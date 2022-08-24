@@ -3,11 +3,11 @@
 <div class="cards container-fluid text-center">
   <% @products.each do |product| %>
     <%= link_to product_path(product) do %>
-      <div class="card">
-          <% if product.cloudinary_id.present? %>
-            <div class="card-image card-jake" style="background-image: url('<%= cl_image_path product.cloudinary_id.key, crop: :scale %>')"></div>
+      <li class="card">
+          <% if product.photo.present? %>
+            <div class="card-image card-jake" style="background-image: url('<%= cl_image_path product.photo.key, crop: :scale %>')"></div>
           <% else %>
-            <div class="card-image card-jake" style="background-image: url('https://vignette.wikia.nocookie.net/brooklynnine-nine/images/7/7f/JakeS5.jpg/revision/latest?cb=20171103222710')"></div>
+            <div class="card-image card-jake" style="background-image: url('https://cdn2.wpbeginner.com/wp-content/uploads/2013/04/wp404error.jpg')"></div>
           <% end %>
           <div class="card-text">
             <h3 class="title"><%= product.title %></h3>
