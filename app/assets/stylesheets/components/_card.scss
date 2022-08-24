@@ -1,7 +1,9 @@
 :root {
-  --card-proportions: 90;
+  /* --card-proportions: 90;
   --card-height: calc(3.5px * var(--card-proportions));
-  --card-width: calc(2.5px * var(--card-proportions));
+  --card-width: calc(2.5px * var(--card-proportions)); */
+  --card-height: 315px;
+  --card-width: 225px;
 }
 
 .card {
