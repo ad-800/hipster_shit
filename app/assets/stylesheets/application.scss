@@ -28,3 +28,13 @@ h1 {
   font-weight: bold;
   font-size: 60px;
 }
+
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+#main-content {
+  margin-top: 80px;
+}
