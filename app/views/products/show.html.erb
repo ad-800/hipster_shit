@@ -3,8 +3,8 @@
     <div class="show-l col-12 col-lg-6">
       <div class="d-flex justify-content-center half">
         <div class="show-image">
-          <% if @product.cloudinary_id.attached? %>
-            <%= cl_image_tag @product.cloudinary_id.key, height: 500, width: 500, crop: :fill %>
+          <% if @product.photo.attached? %>
+            <%= cl_image_tag @product.photo.key, height: 500, width: 500, crop: :fill %>
           <% end %>
         </div>
       </div>
