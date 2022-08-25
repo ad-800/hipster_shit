@@ -7,11 +7,4 @@ class ApplicationController < ActionController::Base
 
     devise_parameter_sanitizer.permit(:account_update, keys: [:photo, :name, :address])
   end
-
-  protected
-
-  def after_update_path_for(resource)
-    raise
-    user_path(resource)
-  end
 end

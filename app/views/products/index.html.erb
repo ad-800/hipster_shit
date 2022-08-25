@@ -1,4 +1,5 @@
-<h1 class="page-title pt-text">hip shit</h1>
+<div class="margin-top">
+  <h1 class="page-title pt-text">hip shit</h1>
 
 <div class="cards">
   <% @products.each do |product| %>
@@ -16,20 +17,21 @@
             <% if product.purchase %>
               <img src="https://i.ibb.co/Yfr2npH/sold-1.pngg" width="200" height="65" alt="sold">
             <% else %>
-              <p>Price: <i class="fa-solid fa-euro-sign"></i><%= product.price.round(2) %></p>
+              <p>Price: <i class="fa-solid fa-euro-sign"></i><%= sprintf("%0.02f", product.price) %></p>
             <% end %>
           </div>
         </div>
       </div>
+      <% end %>
     <% end %>
-  <% end %>
 </div>
 <% if @search == true %>
   <%= link_to products_path do %>
     <div class= "container text-center" style="visibility: none">
         <button class="fancy-button one">
-          Browse more shit!
+          <span style="color: black">Browse more shit!</span>
         </button>
     </div>
     <% end %>
 <% end %>
+</div>
