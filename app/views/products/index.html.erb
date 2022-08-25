@@ -1,5 +1,6 @@
-<h1 class="page-title pt-text">hip shit</h1>
-
+<div class="margin-top">
+  <h1 class="page-title pt-text">hip shit</h1>
+  
 <div class="cards">
   <% @products.each do |product| %>
     <%= link_to product_path(product) do %>
@@ -20,9 +21,9 @@
             <% end %>
           </div>
         </div>
-      </div>
+      <% end %>
     <% end %>
-  <% end %>
+</div>
 </div>
 <% if @search == true %>
   <%= link_to products_path do %>
