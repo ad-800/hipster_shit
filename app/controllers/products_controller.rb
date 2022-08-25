@@ -7,8 +7,10 @@ class ProductsController < ApplicationController
     if params[:query].present?
       sql_query = "title ILIKE :query OR description ILIKE :query"
       @products = Product.where(sql_query, query: "%#{params[:query]}%")
+      @search = true
     else
       @products = Product.all
+      @search = false
     end
   end
 

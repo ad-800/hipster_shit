@@ -8,3 +8,12 @@
 legend ~ div.form-check:first-of-type {
   clear: left;
 }
+
+.white-background {
+  background-color: white;
+  border-color: black;
+
+  &:focus {
+    background-color: white;
+  }
+}
