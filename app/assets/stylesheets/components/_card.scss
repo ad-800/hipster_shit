@@ -27,7 +27,7 @@
 
 .card-text {
   background: linear-gradient(176deg, #000d33, 17%, #0153cd, 17%, #0153cd, 19%, antiquewhite, 19%, antiquewhite);
-  display: inline-block;
+  display: flex 0 0 0;
   height: var(--card-height);
   width: var(--card-width);
   border-radius: 20px;
