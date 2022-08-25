@@ -26,7 +26,8 @@
 /* all the content of the front of the cards */
 
 .card-text {
-  background: linear-gradient(176deg, #000d33, 17%, #0153cd, 17%, #0153cd, 19%, antiquewhite, 19%, antiquewhite);
+  background: $purple;
+  padding-top: 2rem;
   display: flex 0 0 0;
   height: var(--card-height);
   width: var(--card-width);
@@ -52,14 +53,9 @@
   color: #222;
   font-size: 18px;
   display: block;
-  height: var(--card-height);
   width: var(--card-width);
   box-sizing: border-box;
   padding: 13% 5% 5% 5%;
-}
-
-.description {
-  color: #444;
 }
 
 /* all the images of each card */
