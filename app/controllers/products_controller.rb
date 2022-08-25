@@ -13,6 +13,10 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @markers = {
+      lat: @product.user.latitude,
+      lng: @product.user.longitude
+    }
   end
 
   def new
