@@ -49,3 +49,11 @@
 .sticky + .content {
   padding-top: 102px;
 }
+
+.beanie {
+  height: 50px;
+  position: absolute;
+  right: -10px;
+  top: -29px;
+  z-index: 1;
+}
