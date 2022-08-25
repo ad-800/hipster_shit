@@ -5,10 +5,10 @@
     <%= f.error_notification %>
 
     <div class="form-inputs">
-      <%= f.input :name, hint:"Update your user name" %>
-      <%= f.input :address, hint:"Update your selling address" %>
-      <%= f.input :photo, as: :file, hint:"Update your avatar" %>
-      <%= f.input :email, required: true, autofocus: true %>
+      <%= f.input :name, hint:"Update your user name", required: false, input_html: { autocomplete: "name", class: "white-background" }  %>
+      <%= f.input :address, hint:"Update your selling address", required: false, input_html: { autocomplete: "address", class: "white-background" } %>
+      <%= f.input :photo, as: :file, hint:"Update your avatar", required: false, input_html: { autocomplete: "photo", class: "white-background" } %>
+      <%= f.input :email, required: true, autofocus: true, required: false, input_html: { autocomplete: "email", class: "white-background" } %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
