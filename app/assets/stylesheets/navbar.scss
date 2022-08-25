@@ -2,6 +2,7 @@
   justify-content: space-between;
   background: white;
   z-index: 1;
+  padding: 0 !important;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -12,33 +13,41 @@
   width: 200px;
 }
 
+// .search-form-control {
+//   position: relative;
+// }
+
+// .search-form-control .btn {
+//   position: absolute;
+//   top: 8px;
+//   bottom: 8px;
+//   right: 8px;
+
+//   &:hover {
+//     box-shadow: none;
+//     border: white;
+//   }
+// }
+
 .search-form-control {
-  position: relative;
-}
+  .form-control {
+    height: 3.5rem;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border: 8px solid black;
+    background-color: #FFFFFF;
+  }
 
-.search-form-control .btn {
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  right: 8px;
-
-  &:hover {
-    box-shadow: none;
-    border: white;
+  &.w-100 {
+    .form-control {
+      width: 100%;
+    }
   }
 }
 
-.search-form-control .form-control {
-  height: 3.5rem;
-  width: 300px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  border: 8px solid black;
-  background-color: #FFFFFF;
-}
-
-.content {
-  padding: 16px;
-}
+// .content {
+//   padding: 0px;
+// }
 
 .sticky {
   position: fixed;
@@ -48,4 +57,11 @@
 
 .sticky + .content {
   padding-top: 102px;
+}
+
+#mobile-search {
+  position: absolute;
+  background: white;
+  top: 73px;
+  width: 100%;
 }

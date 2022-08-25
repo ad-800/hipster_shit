@@ -1,27 +1,29 @@
-<h1 class="page-title pt-text">hip shit</h1>
+<div class="margin-top">
+  <h1 class="page-title pt-text">hip shit</h1>
 
-<div class="cards container-fluid text-center">
-  <% @products.each do |product| %>
-    <%= link_to product_path(product) do %>
-      <div class="card">
-        <% if product.photo.present? %>
-          <div class="card-image card-jake" style="background-image: url('<%= cl_image_path product.photo.key, crop: :scale %>')"></div>
-        <% else %>
-          <div class="card-image card-jake" style="background-image: url('https://cdn2.wpbeginner.com/wp-content/uploads/2013/04/wp404error.jpg')"></div>
-        <% end %>
-        <div class="card-text">
-          <h3 class="title"><%= product.title %></h3>
-          <p class="card-content">
-            <span class="description"><%= product.description %><br>
-              <% if product.purchase %>
-                <img src="https://i.ibb.co/Yfr2npH/sold-1.pngg" width="200" height="65" alt="sold">
-              <% else %>
-                Price : <%= product.price %>
-              <% end %>
-            </span>
-          </p>
+  <div class="cards container-fluid text-center">
+    <% @products.each do |product| %>
+      <%= link_to product_path(product) do %>
+        <div class="card">
+          <% if product.photo.present? %>
+            <div class="card-image card-jake" style="background-image: url('<%= cl_image_path product.photo.key, crop: :scale %>')"></div>
+          <% else %>
+            <div class="card-image card-jake" style="background-image: url('https://cdn2.wpbeginner.com/wp-content/uploads/2013/04/wp404error.jpg')"></div>
+          <% end %>
+          <div class="card-text">
+            <h3 class="title"><%= product.title %></h3>
+            <p class="card-content">
+              <span class="description"><%= product.description %><br>
+                <% if product.purchase %>
+                  <img src="https://i.ibb.co/Yfr2npH/sold-1.pngg" width="200" height="65" alt="sold">
+                <% else %>
+                  Price : <%= product.price %>
+                <% end %>
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
+      <% end %>
     <% end %>
-  <% end %>
+</div>
 </div>
