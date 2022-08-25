@@ -9,7 +9,8 @@ puts "Creating 10 seeds"
 parameters = {
   title: '1980s Sony Walkman',
   description: 'Original cassette player. Play your favorite ZZ Top tape and jam out to the rock gods.',
-  price: 375
+  price: 375,
+  user_id: 1
 }
 
 puts parameters[:title]
@@ -22,7 +23,8 @@ new_product.save
 parameters = {
   title: 'Bunch of Baby Doll Heads',
   description: "Don't ask...",
-  price: 100
+  price: 100,
+  user_id: 2
 }
 
 puts parameters[:title]
@@ -35,7 +37,8 @@ new_product.save
 parameters = {
   title: 'Blank VHS Tape',
   description: "Don't trust Netflix and all those streaming giants. Record your own shit",
-  price: 25
+  price: 25,
+  user_id: 3
 }
 
 puts parameters[:title]
@@ -48,7 +51,8 @@ new_product.save
 parameters = {
   title: 'Floppy Hat',
   description: "My own dog Chester modelled this awesome hat. I've been wearing it for 10 years but it still looks great. It went to a Coldplay concert.",
-  price: 15
+  price: 15,
+  user_id: 4
 }
 
 puts parameters[:title]
@@ -61,7 +65,8 @@ new_product.save
 parameters = {
   title: 'Patagonia Fanny Pack',
   description: "Take this with you on your next adventure! It went with me all over western India. Water proof.",
-  price: 45
+  price: 45,
+  user_id: 2
 }
 
 puts parameters[:title]
@@ -74,7 +79,8 @@ new_product.save
 parameters = {
   title: 'Small Cactus',
   description: "This cactus will love you when no one else will. Water it once a year.",
-  price: 10
+  price: 10,
+  user_id: 1
 }
 
 puts parameters[:title]
@@ -87,7 +93,8 @@ new_product.save
 parameters = {
   title: 'Crocs with a Ton of Charms',
   description: "Crocs are comfortable, lightweight, and it's completely fine for a 20-something to wear them to the grocery store to pick up cheap white wine.",
-  price: 80
+  price: 80,
+  user_id: 4
 }
 
 puts parameters[:title]
@@ -100,7 +107,8 @@ new_product.save
 parameters = {
   title: 'Mustache Party Props',
   description: "I made them myself with my cat looking on. Great at parties and photoshoots!",
-  price: 20
+  price: 20,
+  user_id: 3
 }
 
 puts parameters[:title]
@@ -113,7 +121,8 @@ new_product.save
 parameters = {
   title: 'VW Van',
   description: "First VW Van released in 1969. Enough said (doesn't work)",
-  price: 69_000
+  price: 69_000,
+  user_id: 2
 }
 
 puts parameters[:title]
@@ -126,7 +135,8 @@ new_product.save
 parameters = {
   title: 'Purple Flannel Shirt',
   description: "Warm, unisex, and comfy. Impress your date with a flannel shirt that gives off 'i don't care about anything' vibes",
-  price: 70
+  price: 70,
+  user_id: 1
 }
 
 puts parameters[:title]
