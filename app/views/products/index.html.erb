@@ -16,7 +16,7 @@
             <% if product.purchase %>
               <img src="https://i.ibb.co/Yfr2npH/sold-1.pngg" width="200" height="65" alt="sold">
             <% else %>
-              <p>Price: <i class="fa-solid fa-euro-sign"></i><%= product.price.round(2) %></p>
+              <p>Price: <i class="fa-solid fa-euro-sign"></i><%= sprintf("%0.02f", product.price) %></p>
             <% end %>
           </div>
         </div>
