@@ -13,6 +13,10 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @markers = {
+      lat: @product.user.latitude,
+      lng: @product.user.longitude
+    }
   end
 
   def new
@@ -21,6 +25,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+    @product.user = current_user
     if @product.save
       redirect_to @product, notice: 'The product was successfully added'
     else
