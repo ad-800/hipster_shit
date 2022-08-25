@@ -25,3 +25,12 @@
     <% end %>
   <% end %>
 </div>
+<% if @search == true %>
+  <%= link_to products_path do %>
+    <div class= "container text-center" style="visibility: none">
+        <button class="fancy-button one">
+          Browse more shit!
+        </button>
+    </div>
+    <% end %>
+<% end %>
