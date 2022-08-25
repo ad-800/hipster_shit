@@ -12,8 +12,8 @@
 
     <div class="show-r col-12 col-lg-6">
       <div class="half">
-        <h3><% @product.title %></h3>
         <h3 class="margin-bottom margin-top"><%= @product.title %></h3>
+        <p>Seller: <%= @product.user.name %></p>
         <p><i class="fa-solid fa-tags"></i> <%= @product.description %></p>
         <p><i class="fa-solid fa-cart-shopping"></i> <%= @product.price %> <i class="fa-solid fa-euro-sign"></i></p>
         <button class="button-52" role="button">
