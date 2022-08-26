@@ -3,6 +3,7 @@
   background: white;
   z-index: 1;
   padding: 0 !important;
+  border-bottom: 1px solid black;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,6 +12,14 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 200px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-item {
+  padding-right: 2rem;
 }
 
 // .search-form-control {
