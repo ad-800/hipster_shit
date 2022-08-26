@@ -1,5 +1,5 @@
 <div class="margin-top">
-  <h1 class="page-title pt-text">hip shit</h1>
+  <h1 class="page-title pt-text margin-big">hip shit</h1>
 
 <div class="cards">
   <% @products.each do |product| %>
@@ -33,7 +33,7 @@
 
 <% if @search == true || @search == nil%>
   <div class="container text-center mb-3">
-    <%= link_to "Browse more shit", products_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "browse more shit", products_path, class: "btn btn-md btn-primary" %>
   <%#= Below is the code to the fancy button currently not used  %>
   <%#= link_to products_path do %>
   <%#=    <div class= "container text-center" style="visibility: none"> %>
