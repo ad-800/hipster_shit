@@ -11,7 +11,7 @@
         <h3 class="mt-3"><%= @user.name %></h3>
         <p><i class="fa-solid fa-earth-europe"></i> <%= @user.address %></p>
         <p><i class="fa-solid fa-envelope"></i> <%= @user.email %></p>
-        <% if current_user == @product.user %>
+        <% if current_user == @user %>
           <button class="button-52 mb-5" role="button">
             <%= link_to "Edit profile", edit_user_registration_path(@user), class: 'link' %>
           </button>

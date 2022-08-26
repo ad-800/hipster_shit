@@ -16,6 +16,10 @@
   border-right: 1px solid black;
 }
 
+.show-image {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 .half {
   padding: 80px;
 }
@@ -27,4 +31,12 @@
 .small-profile {
   height: 30px;
   text-decoration: none;
+}
+
+.user-link {
+  color: $dark;
+}
+
+.map-box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

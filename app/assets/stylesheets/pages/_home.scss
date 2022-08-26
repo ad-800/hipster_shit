@@ -1,30 +1,36 @@
 // Specific CSS for your home-page
-.splithome {
-  bottom: 0;
-  width: 50%;
-  height: 100%;
-  position: fixed;
-  overflow-x: hidden;
-  border: 1px solid $black;
-}
+// .splithome {
+//   bottom: 0;
+//   width: 50%;
+//   height: 100%;
+//   position: fixed;
+//   overflow-x: hidden;
+//   border: 1px solid $black;
+// }
 
-.home-description {
-  left: 0;
+.home-l {
+  // left: 0;
+  border-top: 2px solid black;
   background-color: #FEE432;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
-.home-image {
+.home-r {
+  border-top: 2px solid black;
   background-color: #75FB85;
-  right: 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  // right: 0;
 }
 
-.centered-home {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
+// .centered-home {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   text-align: left;
+// }
 
 .btn {
   box-shadow: 5px 5px $black;
@@ -35,5 +41,5 @@
 }
 
 .landing-image {
-  width: 35rem;
+  width: 25rem;
 }

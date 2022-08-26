@@ -1,13 +1,19 @@
-<div class="container-fluid checkout-border">
-  <div class="home-description splithome">
-    <div class="centered-home">
-      <h1>hipster shit</h1>
-      <p>From wide-rimmed glasses and vintage fanny-packs to tiny cacti and cassette tapes, shop here for all your hip shit needs.</p>
-      <%= link_to "Start Browsing", products_path, class: "btn btn-primary" %>
+<div class="container-fluid margin-top mt-5">
+  <div class="row" style="height: 100vh">
+    <div class="home-l col-xs-12 col-lg-6">
+      <div class="d-flex justify-content-center half">
+        <div>
+          <h1 class="margin-big">hipster shit</h1>
+          <p>From wide-rimmed glasses and vintage fanny-packs to tiny cacti and cassette tapes, shop here for all your hip shit needs.</p>
+          <%= link_to "Start Browsing", products_path, class: "btn btn-primary" %>
+        </div>
+      </div>
     </div>
-  <div class="home-image splithome">
-    <div class="centered-home">
-      <%= image_tag "shopping.svg", class: "landing-image" %>
+
+    <div class="home-r col-xs-12 col-lg-6">
+      <div class="half margin-big d-flex justify-content-center half">
+        <%= image_tag "shopping.svg", class: "landing-image" %>
+      </div>
     </div>
   </div>
 </div>
