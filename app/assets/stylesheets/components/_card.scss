@@ -17,6 +17,7 @@
   transform-style: preserve-3d;
   transform: rotateY(0deg);
   transition: 1s ease-in-out;
+  border: none;
 }
 
 .card:hover {
@@ -70,4 +71,19 @@
 .card-jake {
   /* background-image: url("https://vignette.wikia.nocookie.net/brooklynnine-nine/images/7/7f/JakeS5.jpg/revision/latest?cb=20171103222710");*/
   background-size: cover;
+}
+
+.sold-content {
+  font-size: 18px;
+  font-family: Sora, sans-serif;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: white;
+  z-index: 29;
 }
