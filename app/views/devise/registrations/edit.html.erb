@@ -5,9 +5,9 @@
     <%= f.error_notification %>
 
     <div class="form-inputs">
-      <%= f.input :name, hint:"Update your user name", required: false, input_html: { autocomplete: "name", class: "white-background" }  %>
-      <%= f.input :address, hint:"Update your selling address", required: false, input_html: { autocomplete: "address", class: "white-background" } %>
-      <%= f.input :photo, as: :file, hint:"Update your avatar", required: false, input_html: { autocomplete: "photo", class: "white-background" } %>
+      <%= f.input :name, hint:"update your user name", required: false, input_html: { autocomplete: "name", class: "white-background" }  %>
+      <%= f.input :address, hint:"update your selling address", required: false, input_html: { autocomplete: "address", class: "white-background" } %>
+      <%= f.input :photo, as: :file, hint:"update your avatar", required: false, input_html: { autocomplete: "photo", class: "white-background" } %>
       <%= f.input :email, required: true, autofocus: true, required: false, input_html: { autocomplete: "email", class: "white-background" } %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -28,7 +28,7 @@
     </div>
 
     <div class="form-actions mb-5">
-      <%= f.button :submit, "Update" %>
+      <%= f.button :submit, "update" %>
       <%= link_to "cancel", user_path(current_user), class: 'btn btn-ghost' %>
     </div>
   <% end %>
