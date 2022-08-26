@@ -4,7 +4,7 @@
       <div class="d-flex justify-content-center half">
         <div class="show-image">
           <% if @product.photo %>
-            <%= cl_image_tag @product.photo.key, height: 500, width: 500, crop: :fill %>
+            <%= cl_image_tag @product.photo.key, crop: :fill %>
           <% end %>
         </div>
       </div>
@@ -28,7 +28,7 @@
         </div>
         <%# Return to list button  %>
         <%= link_to products_path do %>
-          <button class="button-52" role="button">
+          <button class="button-52 mb-3" role="button">
             <strong> back to the list </strong>
           </button>
         <% end %>
