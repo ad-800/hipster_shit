@@ -1,5 +1,5 @@
-<div class="container margin-top">
-  <h1 class="mt-5 offset-1">Profile page</h1>
+<div class="container margin-profile">
+  <h1 class="mt-5 offset-1 ">profile</h1>
   <div class="mt-4 mb-3">
     <div class="row">
       <div class="profile-box col-sm-12 col-lg-4 offset-lg-4">
@@ -13,7 +13,7 @@
         <p><i class="fa-solid fa-envelope"></i> <%= @user.email %></p>
         <% if current_user == @user %>
           <button class="button-52 mb-5" role="button">
-            <%= link_to "Edit profile", edit_user_registration_path(@user), class: 'link' %>
+            <%= link_to "edit profile", edit_user_registration_path(@user), class: 'link' %>
           </button>
         <% end %>
       </div>
