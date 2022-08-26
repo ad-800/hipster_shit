@@ -26,16 +26,23 @@
           data-map-markers-value="<%= @markers.to_json %>"
           data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
         </div>
-        <button class="button-52" role="button">
-          <%= link_to "back to the list", products_path, class: 'link' %>
-        </button>
+        <%# Return to list button  %>
+        <%= link_to products_path do %>
+          <button class="button-52" role="button">
+            <strong> back to the list </strong>
+          </button>
+        <% end %>
+
         <% if @product.purchase %>
         <br><br>
         <img src="https://i.ibb.co/Yfr2npH/sold-1.png" height="100" alt="sold">
         <% else %>
-        <button class="button-52" role="button">
-          <%= link_to "buy shit", new_product_purchase_path(@product), class: 'link' %>
-        </button>
+        <%# Buy Button  %>
+          <%= link_to new_product_purchase_path(@product) do %>
+            <button class="button-52" role="button">
+              <strong>buy shit</strong>
+            </button>
+          <% end %>
         <% end %>
       </div>
     </div>
