@@ -3,18 +3,18 @@
   <div class="checkout-box margin-top margin-bigx2">
     <div class="row">
       <div class="col-12 col-lg-6">
-        <h1 class="margin-bottom">Take it home</h1>
-        <p style="font-size:32px;">
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-cc-paypal"></i>
-          <i class="fa-brands fa-cc-apple-pay"></i>
-        </p>
+        <h1 class="margin-bottom">checkout your new shit</h1>
         <h2><%= @product.title %></h2>
-        <p><%= @product.price %> <i class="fa-solid fa-euro-sign"></i></p>
+        <p><i class="fa-solid fa-euro-sign"></i> <%= @product.price %></p>
       </div>
       <div class="col-12 col-lg-6">
         <div class="margin-top">
+          <p style="font-size:32px;">
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+          </p>
           <label for="text" class="card-font">Credit card name:</label>
           <input type="text" class="form-control credit" name="fname" size="50">
           <label for="number" class="card-font">Credit card number:</label>
@@ -24,6 +24,6 @@
         </div>
       </div>
     </div>
-    <%= button_to 'Buy it', product_purchases_path(@product), method: :post, class:'link btn btn-primary' %>
+    <%= button_to 'buy it', product_purchases_path(@product), method: :post, class:'link btn btn-primary' %>
   </div>
 </div>
