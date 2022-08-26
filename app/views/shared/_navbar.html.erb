@@ -30,27 +30,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
-            <%= link_to "Home", products_path, class: "btn btn-success" %>
+            <%= link_to "home", products_path, class: "btn btn-success" %>
           </li>
           <% if user_signed_in? %>
           <li class="nav-item">
-            <%= link_to "Add Product", new_product_path, class: "btn btn-warning" %>
+            <%= link_to "add product", new_product_path, class: "btn btn-warning" %>
           </li>
           </li>
           <li class="nav-item dropdown">
             <%= cl_image_tag current_user.photo.key,
                   crop: :thumb, gravity: :face, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Profile", user_path(current_user), class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+              <%= link_to "profile", user_path(current_user), class: "dropdown-item" %>
+              <%= link_to "log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "btn btn-warning" %>
+            <%= link_to "login", new_user_session_path, class: "btn btn-warning" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Start selling", new_user_registration_path, class: "btn btn-warning" %>
+            <%= link_to "start selling", new_user_registration_path, class: "btn btn-warning" %>
           </li>
         <% end %>
       </ul>
@@ -66,7 +66,7 @@
           <%= text_field_tag :query,
               params[:query],
               class: "form-control",
-              placeholder: "Find a product"
+              placeholder: "find a product"
           %>
       </div>
     <% end %>
