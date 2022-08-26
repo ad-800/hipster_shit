@@ -14,9 +14,8 @@
       <div class="half">
         <h3 class="margin-bottom margin-top"><%= @product.title %></h3>
         <p>
-          <%= link_to user_path(@product.user), class: 'user-link' do %>
-            <%= image_tag "noun-profile-5084947.png", class: 'small-profile' %>Sold by:
-            <%= @product.user.name %>
+          <i class="fa-solid fa-user"></i>
+          <%= link_to user_path(@product.user), class: 'user-link' do %>Sold by: <%= @product.user.name %>
           <% end %>
         </p>
         <p><i class="fa-solid fa-tags"></i> <%= @product.description %></p>

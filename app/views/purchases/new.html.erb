@@ -5,7 +5,7 @@
       <div class="col-12 col-lg-6">
         <h1 class="margin-bottom">checkout your new shit</h1>
         <h2><%= @product.title %></h2>
-        <p><i class="fa-solid fa-euro-sign"></i> <%= @product.price %></p>
+        <p><i class="fa-solid fa-euro-sign"></i> <%= sprintf("%0.02f", @product.price) %></p>
       </div>
       <div class="col-12 col-lg-6">
         <div class="margin-top">
