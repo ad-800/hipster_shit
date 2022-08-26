@@ -13,10 +13,11 @@
     <div class="show-r col-12 col-lg-6">
       <div class="half">
         <h3 class="margin-bottom margin-top"><%= @product.title %></h3>
-        <p>Seller: <%= @product.user.name %>
-          <%#= link_to user_path do %>
-            <%#= image_tag "noun-profile-5084947.png", class: 'small-profile' %>
-          <%# end %>
+        <p>
+          <%= link_to user_path(@product.user, product_id: @product.id) do %>
+            <%= image_tag "noun-profile-5084947.png", class: 'small-profile' %>
+          <% end %>
+          <%= @product.user.name %>
         </p>
         <p><i class="fa-solid fa-tags"></i> <%= @product.description %></p>
         <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-solid fa-euro-sign"></i><%= sprintf("%0.02f", @product.price) %></p>
